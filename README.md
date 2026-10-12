@@ -3,9 +3,11 @@
 > A professional, console-driven MATLAB tool for **real-time GPS coordinate transformation** across four fundamental reference frames: **ECI**, **ECEF**, **END**, and **NEU** — designed for aerospace, GNC, and satellite navigation applications.
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2019a%2B-blue.svg)](https://www.mathworks.com/products/matlab.html)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 [![Status](https://img.shields.io/badge/Status-Stable-brightgreen.svg)]()
+[![GitHub stars](https://img.shields.io/github/stars/MadhuSudhan2310/gps-frame-converter?style=social)](https://github.com/MadhuSudhan2310/gps-frame-converter/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/MadhuSudhan2310/gps-frame-converter?style=social)](https://github.com/MadhuSudhan2310/gps-frame-converter/network/members)
 
 ---
 
@@ -14,7 +16,7 @@
 - [Overview](#-overview)
 - [Features](#-features)
 - [Reference Frames](#-reference-frames)
-- [Installation](#-installation)
+- [Installation](#️-installation)
 - [Usage](#-usage)
 - [Command Reference](#-command-reference)
 - [Example Session](#-example-session)
@@ -22,7 +24,7 @@
 - [CSV Output Format](#-csv-output-format)
 - [Repository Structure](#-repository-structure)
 - [Requirements](#-requirements)
-- [Roadmap](#-roadmap)
+- [Roadmap](#️-roadmap)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Author](#-author)
@@ -98,13 +100,16 @@ The tool operates entirely in the **MATLAB Command Window** — no GUI, no toolb
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/gps-frame-converter.git
+git clone https://github.com/MadhuSudhan2310/gps-frame-converter.git
 
 # 2. Navigate into the folder
 cd gps-frame-converter
+```
 
-# 3. (Optional) Add to MATLAB path
-# In MATLAB Command Window:
+Then in the **MATLAB Command Window**:
+
+```matlab
+% 3. Add to MATLAB path (optional)
 addpath(pwd)
 savepath
 ```
@@ -168,7 +173,6 @@ GPS >> 28.6139 77.2090 216
     N=        0.000  E=        0.000  U=     -216.000
   --- Range/Bearing ---
     Range=      0.00 m   Bearing=   0.00 deg
-  --------------------------
 
 GPS >> track 28.6139 77.2090 500 50 5
   [TRACK] 28.6139, 77.2090, 500 m | speed=50.0 m/s dur=5.0 s
@@ -274,6 +278,8 @@ gps-frame-converter/
     └── test_frames.m      # Unit sanity checks
 ```
 
+> 📌 **Note:** Only `GPSRealtime.m` and `README.md` currently exist in this repository. The additional folders and files listed above are **planned for upcoming releases** (see [Roadmap](#️-roadmap)).
+
 ---
 
 ## 📦 Requirements
@@ -325,11 +331,11 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Madhu Sudhan**
 - 🎓 Aerospace / GNC Engineer
-- 💼 [LinkedIn](https://linkedin.com/in/your-profile)
-- 🐙 [GitHub](https://github.com/your-username)
-- 📧 your.email@example.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/) *(update with your profile URL)*
+- 🐙 [GitHub](https://github.com/MadhuSudhan2310)
+- 📧 *(add your email)*
 
 ---
 
@@ -345,8 +351,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## ⭐ Support
 
 If you find this project useful, please consider:
+
 - ⭐ **Starring** the repository
-- 🐛 **Reporting issues** via GitHub Issues
+- 🐛 **Reporting issues** via [GitHub Issues](https://github.com/MadhuSudhan2310/gps-frame-converter/issues)
 - 🔀 **Submitting PRs** for improvements
 - 📢 **Sharing** with your aerospace network
 
